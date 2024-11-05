@@ -9,4 +9,4 @@ steps:
   args: ['push', 'gcr.io/devops-project-440815/my-app']
 - name: 'gcr.io/cloud-builders/kubectl'
   args: ['set', 'image', 'deployment/my-app-deployment', 'my-app=gcr.io/devops-project-440815/my-app']
-images: ['gcr.io/$PROJECT_ID/my-app']
+images: ['gcr.io/devops-project-440815/my-app']
